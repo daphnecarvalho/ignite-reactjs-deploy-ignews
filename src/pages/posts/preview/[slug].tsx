@@ -70,7 +70,7 @@ export const getStaticPaths: GetStaticPaths = () => {
     paths: [
       {
         params: {
-          slug: "dark-mode-com-css--mudando-a-aparencia-do-blog-de",
+          slug: "",
         },
       },
     ],
