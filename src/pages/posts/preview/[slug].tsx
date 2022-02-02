@@ -67,13 +67,7 @@ export default function PostPreview({ post }: PostPrevireProps) {
 
 export const getStaticPaths: GetStaticPaths = () => {
   return {
-    paths: [
-      {
-        params: {
-          slug: "",
-        },
-      },
-    ],
+    paths: [],
     fallback: "blocking",
   };
 };
