@@ -4,7 +4,9 @@ Instruction: [Deploy do Ignews](https://www.notion.so/Desafio-01-Deploy-do-Ignew
 
 ## Base URL
 
-http://localhost:3000/
+Production: https://ignite-reactjs-deploy-ignews.vercel.app/
+
+Local: http://localhost:3000/
 
 ## Project commands
 
