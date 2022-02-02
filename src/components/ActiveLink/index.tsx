@@ -18,6 +18,9 @@ export function ActiveLink({
 
   let isActive = false;
 
+  console.log(asPath);
+  console.log(rest);
+
   if (shouldMatchExactHref && (asPath === rest.href || asPath === rest.as)) {
     isActive = true;
   }
