@@ -18,13 +18,7 @@ export function ActiveLink({
 
   let isActive = false;
 
-  let strRest = JSON.stringify(rest);
-  const arrRest = strRest.slice(9).split('"}');
-
-  if (
-    shouldMatchExactHref &&
-    (asPath === rest.href || asPath === rest.as || asPath === arrRest?.[0])
-  ) {
+  if (shouldMatchExactHref && (asPath === rest.href || asPath === rest.as)) {
     isActive = true;
   }
 
