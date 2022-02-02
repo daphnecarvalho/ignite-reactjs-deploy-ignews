@@ -1,0 +1,74 @@
+.mainContainer {
+  padding: 0;
+}
+
+.contentContainer {
+  height: calc(100vh - 15.1rem);
+  min-height: 460px;
+  max-width: 1120px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  max-width: 600px;
+
+  > span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .wave {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate(0.0deg) }
+     10% { transform: rotate(14.0deg) }
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate(0.0deg) }
+    100% { transform: rotate(0.0deg) }
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    margin-top: 2.5rem;
+    
+    span {
+      color: var(--cyan-500);
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+
+    margin-top: 1.5rem;
+
+    span {
+      color: var(--cyan-500);
+      font-weight: bold;
+    }
+  }
+
+  button {
+    margin-top: 2.5rem;
+  }
+
+  .breakLine {
+    display: block;
+  }
+}
