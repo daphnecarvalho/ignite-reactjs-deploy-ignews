@@ -18,11 +18,13 @@ export function ActiveLink({
 
   let isActive = false;
 
-  console.log(asPath);
-  console.log(rest);
-  console.log(JSON.stringify(rest));
+  let strRest = JSON.stringify(rest);
+  const arrRest = strRest.slice(9).split('"}');
 
-  if (shouldMatchExactHref && (asPath === rest.href || asPath === rest.as)) {
+  if (
+    shouldMatchExactHref &&
+    (asPath === rest.href || asPath === rest.as || asPath === arrRest?.[0])
+  ) {
     isActive = true;
   }
 
