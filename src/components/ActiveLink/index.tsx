@@ -20,6 +20,7 @@ export function ActiveLink({
 
   console.log(asPath);
   console.log(rest);
+  console.log(JSON.stringify(rest));
 
   if (shouldMatchExactHref && (asPath === rest.href || asPath === rest.as)) {
     isActive = true;
